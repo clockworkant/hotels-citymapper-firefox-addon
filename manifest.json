@@ -1,0 +1,17 @@
+{
+
+  "manifest_version": 2,
+  "name": "City Hotel Mapper",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["https://www.laterooms.com/en/Hotels.aspx*"],
+      "js": ["jquery-3.3.1.min.js","time-mapper.js"]
+    }
+  ],
+  "permissions": [
+    "*://www.geopostcode.org.uk/*",
+    "*://developer.citymapper.com/*",
+    "webRequest"
+  ]
+}
